@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErpMvcEfOnboardProject1", "ErpMvcEfOnboardProject1\ErpMvcEfOnboardProject1.csproj", "{2A1E7462-E452-452B-9621-69A29F8EE060}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErpMvcEfOnboardProject1", "ErpMvcEfOnboardProject1\ErpMvcEfOnboardProject1.csproj", "{6E92ECA3-20D8-4173-9B80-2AA8E91E4515}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2A1E7462-E452-452B-9621-69A29F8EE060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A1E7462-E452-452B-9621-69A29F8EE060}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A1E7462-E452-452B-9621-69A29F8EE060}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A1E7462-E452-452B-9621-69A29F8EE060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E92ECA3-20D8-4173-9B80-2AA8E91E4515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E92ECA3-20D8-4173-9B80-2AA8E91E4515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E92ECA3-20D8-4173-9B80-2AA8E91E4515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E92ECA3-20D8-4173-9B80-2AA8E91E4515}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {91F88C0B-792B-46FE-B5A1-F0675325E610}
+		SolutionGuid = {AA9782DC-3A82-4BF8-A58D-CD158A331980}
 	EndGlobalSection
 EndGlobal

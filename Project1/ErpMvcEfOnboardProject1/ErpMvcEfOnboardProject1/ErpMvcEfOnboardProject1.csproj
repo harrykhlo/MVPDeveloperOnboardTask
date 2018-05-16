@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2A1E7462-E452-452B-9621-69A29F8EE060}</ProjectGuid>
+    <ProjectGuid>{6E92ECA3-20D8-4173-9B80-2AA8E91E4515}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -155,68 +155,68 @@
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\ProductSoldsController.cs" />
     <Compile Include="Controllers\StoresController.cs" />
-    <Compile Include="Customer.cs">
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customer.cs">
       <DependentUpon>ErpMvcEfOnboardTaskModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ErpMvcEfOnboardTaskModel.Context.cs">
+    <Compile Include="Models\ErpMvcEfOnboardTaskModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ErpMvcEfOnboardTaskModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="ErpMvcEfOnboardTaskModel.cs">
+    <Compile Include="Models\ErpMvcEfOnboardTaskModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ErpMvcEfOnboardTaskModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ErpMvcEfOnboardTaskModel.Designer.cs">
+    <Compile Include="Models\ErpMvcEfOnboardTaskModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ErpMvcEfOnboardTaskModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Product.cs">
+    <Compile Include="Models\Product.cs">
       <DependentUpon>ErpMvcEfOnboardTaskModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ProductSold.cs">
+    <Compile Include="Models\ProductSold.cs">
+      <DependentUpon>ErpMvcEfOnboardTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Store.cs">
+      <DependentUpon>ErpMvcEfOnboardTaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
       <DependentUpon>ErpMvcEfOnboardTaskModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Store.cs">
-      <DependentUpon>ErpMvcEfOnboardTaskModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>ErpMvcEfOnboardTaskModel.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="ErpMvcEfOnboardTaskModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ErpMvcEfOnboardTaskModel.Context.cs</LastGenOutput>
-      <DependentUpon>ErpMvcEfOnboardTaskModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="ErpMvcEfOnboardTaskModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ErpMvcEfOnboardTaskModel.edmx</DependentUpon>
-      <LastGenOutput>ErpMvcEfOnboardTaskModel.cs</LastGenOutput>
-    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\ErpMvcEfOnboardTaskModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ErpMvcEfOnboardTaskModel.Context.cs</LastGenOutput>
+      <DependentUpon>ErpMvcEfOnboardTaskModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\ErpMvcEfOnboardTaskModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ErpMvcEfOnboardTaskModel.edmx</DependentUpon>
+      <LastGenOutput>ErpMvcEfOnboardTaskModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="ErpMvcEfOnboardTaskModel.edmx">
+    <EntityDeploy Include="Models\ErpMvcEfOnboardTaskModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ErpMvcEfOnboardTaskModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="ErpMvcEfOnboardTaskModel.edmx.diagram">
+    <Content Include="Models\ErpMvcEfOnboardTaskModel.edmx.diagram">
       <DependentUpon>ErpMvcEfOnboardTaskModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -267,7 +267,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -301,9 +300,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>56178</DevelopmentServerPort>
+          <DevelopmentServerPort>60236</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:56178/</IISUrl>
+          <IISUrl>http://localhost:60236/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

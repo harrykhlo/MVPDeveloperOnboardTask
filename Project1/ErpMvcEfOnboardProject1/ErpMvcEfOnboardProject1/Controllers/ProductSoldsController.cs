@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using ErpMvcEfOnboardProject1;
+using ErpMvcEfOnboardProject1.Models;
 
 namespace ErpMvcEfOnboardProject1.Controllers
 {

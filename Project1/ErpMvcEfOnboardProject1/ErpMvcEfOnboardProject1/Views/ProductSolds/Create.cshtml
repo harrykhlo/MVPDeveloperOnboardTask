@@ -1,4 +1,4 @@
-﻿@model ErpMvcEfOnboardProject1.ProductSold
+﻿@model ErpMvcEfOnboardProject1.Models.ProductSold
 
 @{
     ViewBag.Title = "Create";
@@ -16,34 +16,28 @@
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-    <!---->
     <div class="form-group">
-
-        <!--@Html.LabelFor(model => model.CustomerId, "CustomerId", htmlAttributes: new { @class = "control-label col-md-2" }) -->
-        @Html.LabelFor(model => model.CustomerId, "Select Customer", htmlAttributes: new { @class = "control-label col-md-2" })
-
+        @*@Html.LabelFor(model => model.CustomerId, "CustomerId", htmlAttributes: new { @class = "control-label col-md-2" })*@
+        @Html.LabelFor(model => model.CustomerId, "Customer Name", htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
             @Html.DropDownList("CustomerId", null, htmlAttributes: new { @class = "form-control" })
             @Html.ValidationMessageFor(model => model.CustomerId, "", new { @class = "text-danger" })
         </div>
     </div>
-    <!---->
-    <!---->
+
     <div class="form-group">
-
-        <!--@Html.LabelFor(model => model.ProductId, "ProductId", htmlAttributes: new { @class = "control-label col-md-2" }) -->
+        @*@Html.LabelFor(model => model.ProductId, "ProductId", htmlAttributes: new { @class = "control-label col-md-2" })*@
         @Html.LabelFor(model => model.ProductId, "Product Name", htmlAttributes: new { @class = "control-label col-md-2" })
-
         <div class="col-md-10">
             @Html.DropDownList("ProductId", null, htmlAttributes: new { @class = "form-control" })
             @Html.ValidationMessageFor(model => model.ProductId, "", new { @class = "text-danger" })
         </div>
     </div>
-    <!---->
-    <!---->
-    <div class="form-group">
 
-        <!--@Html.LabelFor(model => model.StoreId, "StoreId", htmlAttributes: new { @class = "control-label col-md-2" }) -->
+
+
+    <div class="form-group">
+        @*@Html.LabelFor(model => model.StoreId, "StoreId", htmlAttributes: new { @class = "control-label col-md-2" })*@
         @Html.LabelFor(model => model.StoreId, "Store Name", htmlAttributes: new { @class = "control-label col-md-2" })
 
         <div class="col-md-10">
@@ -51,12 +45,12 @@
             @Html.ValidationMessageFor(model => model.StoreId, "", new { @class = "text-danger" })
         </div>
     </div>
-    <!---->
+
     <div class="form-group">
-        @Html.LabelFor(model => model.DateSold, "Date", htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.DateSold, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
             @Html.EditorFor(model => model.DateSold, "Date", new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.DateSold, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.DateSold, "Date", new { @class = "text-danger" })
         </div>
     </div>
 
@@ -66,12 +60,12 @@
         </div>
     </div>
 </div>
-    }
+}
 
-    <div>
-        @Html.ActionLink("Back to List", "Index")
-    </div>
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
 
-    @section Scripts {
-        @Scripts.Render("~/bundles/jqueryval")
-    }
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
